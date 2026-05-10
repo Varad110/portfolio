@@ -7,7 +7,7 @@ function App() {
       <div className=" scroll-smooth">
         <Header />
 
-        {/* <SplashCursor
+        <SplashCursor
           DENSITY_DISSIPATION={4}
           VELOCITY_DISSIPATION={4}
           PRESSURE={0.1}
@@ -18,7 +18,7 @@ function App() {
           SHADING
           RAINBOW_MODE
           COLOR="#A855F7"
-        /> */}
+        />
 
         <main className=" scroll-smooth relative top-0 z-10 mx-auto flex min-h-100 w-full max-w-8xl flex-col gap-24 py-12 px-5  text-white ">
           <Hero />
