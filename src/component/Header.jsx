@@ -1,22 +1,27 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "../assets/logo.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className=" sticky top-0 z-20 backdrop-blur-lg text-white ">
-      <div className="mx-auto max-w-7xl px-4">
-        <div className="flex h-16 items-center md:justify-center justify-end">
+      <div className="mx-auto max-w-full px-4">
+        <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          {/* <div className="text-2xl font-bold tracking-wide">MyLogo</div> */}
+          <div className="text-2xl  font-bold tracking-wide">
+            <a href="#Home">
+              <img src={logo} alt="Logo" width={120} />
+            </a>
+          </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 mr-6">
             <a href="#Home" className="hover:text-pink-400 transition">
               Home
             </a>
-            <a href="#" className="hover:text-pink-400 transition">
+            <a href="#About" className="hover:text-pink-400 transition">
               About
             </a>
             <a href="#" className="hover:text-pink-400 transition">
@@ -40,7 +45,7 @@ export default function Header() {
           isOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="flex flex-col items-end space-y-4  backdrop-blur-lg px-4 py-4">
+        <div className="flex flex-col items-end  space-y-4  backdrop-blur-lg px-4 py-4">
           <a
             onClick={() => setIsOpen(!isOpen)}
             href="#Home"
@@ -50,7 +55,7 @@ export default function Header() {
           </a>
           <a
             onClick={() => setIsOpen(!isOpen)}
-            href="#"
+            href="#About"
             className="hover:text-pink-400 transition"
           >
             About
