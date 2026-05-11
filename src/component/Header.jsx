@@ -6,13 +6,13 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" sticky top-0 z-20 backdrop-blur-lg text-white ">
-      <div className="mx-auto max-w-full px-4">
-        <div className="flex h-16 items-center justify-between">
+    <nav className=" sticky  top-0 z-20 backdrop-blur-lg text-white ">
+      <div className="mx-auto  max-w-full px-4">
+        <div className="flex h-13 sm:h-16 items-center justify-between">
           {/* Logo */}
           <div className="text-2xl  font-bold tracking-wide">
             <a href="#Home">
-              <img src={logo} alt="Logo" width={120} />
+              <img src={logo} alt="Logo" className="w-16 lg:w-28" />
             </a>
           </div>
 
@@ -24,8 +24,8 @@ export default function Header() {
             <a href="#About" className="hover:text-pink-400 transition">
               About
             </a>
-            <a href="#" className="hover:text-pink-400 transition">
-              Services
+            <a href="#Project" className="hover:text-pink-400 transition">
+              Project
             </a>
             <a href="#" className="hover:text-pink-400 transition">
               Contact
@@ -34,7 +34,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </div>
@@ -62,10 +62,10 @@ export default function Header() {
           </a>
           <a
             onClick={() => setIsOpen(!isOpen)}
-            href="#"
+            href="#Project"
             className="hover:text-pink-400 transition"
           >
-            Services
+            Project
           </a>
           <a
             onClick={() => setIsOpen(!isOpen)}

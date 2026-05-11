@@ -4,11 +4,8 @@ import resume from "../assets/varad_resume (3).pdf";
 import ShapeGrid from "./ShapeGrid";
 function About() {
   return (
-    <section
-      id="About"
-      className=" min-h-[calc(100vh-8rem)] flex items-center "
-    >
-      <div className="grid gap-12 ">
+    <section id="About" className=" min-h-screen flex items-center  ">
+      <div className="grid sm:gap-12   ">
         <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-5">
           <div className="mb-6 lg:mb-0 flex justify-center items-center">
             <img
@@ -47,8 +44,7 @@ of Tommorrow`}
 
                 <a href="#">
                   <button className=" flex items-center gap-2 text-sm bg-transparent border-gray-600 border hover:shadow-lg hover:shadow-gray-600/50 hover:-translate-y-1 transition-transform text-white font-semibold py-4 px-6 rounded-lg mt-2 ">
-                    <Code size={20} color="white" strokeWidth={3} /> View my
-                    work
+                    <Code size={20} color="white" strokeWidth={3} /> View work
                   </button>
                 </a>
               </div>

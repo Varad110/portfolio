@@ -1,11 +1,17 @@
 import "./App.css";
 import SplashCursor from "./component/SplashCursor";
-import { Header, Hero, About } from "./component/index.js";
+import { Header, Hero, About, Project } from "./component/index.js";
 function App() {
   return (
     <>
       <div className=" scroll-smooth">
-        <Header />
+        <Header
+          logoPath="/"
+          home="#Home"
+          about="#About"
+          project="#projects"
+          contact="/contact"
+        />
 
         <SplashCursor
           DENSITY_DISSIPATION={4}
@@ -23,6 +29,7 @@ function App() {
         <main className=" scroll-smooth relative top-0 z-10 mx-auto flex min-h-100 w-full max-w-8xl flex-col gap-24 py-12 px-5  text-white ">
           <Hero />
           <About />
+          <Project />
         </main>
       </div>
     </>
