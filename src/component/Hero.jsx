@@ -1,3 +1,5 @@
+import { TypingAnimation } from "./typing-animation";
+
 function Hero() {
   return (
     <section
@@ -11,20 +13,34 @@ function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
             <span className="relative inline-flex size-3 rounded-full bg-green-500"></span>
           </span>
-          <span className="text-green-400 jetbrains-mono">
+          <span className="text-green-400 jetbrains-mono-normal">
             System Online: Ready to Deploy
           </span>
           {/* end */}
         </div>
         {/* Main text */}
-        <h1 className="text-3xl font-bold sm:text-6xl">
+
+        <h1 className="text-3xl font-bold sm:text-6xl ">
           Crafting{" "}
-          <span className="text-[#004395] text-shadow-zinc-200/30 text-shadow-[0_0px_20px] font-bold">
+          <TypingAnimation
+            showCursor={false}
+            as="span"
+            className="text-[#004395]  text-shadow-zinc-200/30 text-shadow-[0_0px_20px] font-bold "
+          >
             high-
-            <br /> performance{" "}
-          </span>
-          digital <br /> architecture.
+          </TypingAnimation>
+          <br />
+          <TypingAnimation
+            showCursor={false}
+            as="span"
+            delay={700}
+            className="text-[#004395]  text-shadow-zinc-200/30 text-shadow-[0_0px_20px] font-bold"
+          >
+            performance
+          </TypingAnimation>
+          {""} digital <br /> architecture.
         </h1>
+
         <p className="sm:text-lg text-mb font-semibold text-gray-300 text-wrap ">
           A passionate software developer specializing in building exceptional
           digital experiences.

@@ -3,7 +3,7 @@ import { Header } from "../component/index.js";
 function Projects() {
   return (
     <div className="min-h-screen bg-black">
-      <Header />
+      <Header activePage="Projects" />
       <main className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-12 text-white">
         <Link
           to="/"

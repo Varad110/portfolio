@@ -17,7 +17,7 @@ const router = createBrowserRouter(
       <Route path="/projects" element={<Projects />} />
     </>,
   ),
-);  
+);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

@@ -5,13 +5,7 @@ function App() {
   return (
     <>
       <div className=" scroll-smooth">
-        <Header
-          logoPath="/"
-          home="#Home"
-          about="#About"
-          project="#projects"
-          contact="/contact"
-        />
+        <Header activePage={"Home"} />
 
         <SplashCursor
           DENSITY_DISSIPATION={4}

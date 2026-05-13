@@ -18,9 +18,27 @@ body {
   background: #131313;
 }
 
-.jetbrains-mono {
+.jetbrains-mono-normal {
   font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+}
+.jetbrains-mono-bold {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+@theme {
+  --animate-bounceUp: bounceUp 2s ease-in-out infinite;
+  @keyframes bounceUp {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 }
