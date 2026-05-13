@@ -1,7 +1,7 @@
 import { SquareArrowOutUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ProjectCard } from "./index.js";
-import campusHire from "../assets/campusHire.png";
+import campusHire from "../assets/campushire.png";
 // import { useState } from "react";
 function Project() {
   return (
