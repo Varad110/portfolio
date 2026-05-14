@@ -1,6 +1,7 @@
 import "./App.css";
 import SplashCursor from "./component/SplashCursor";
-import { Header, Hero, About, Project } from "./component/index.js";
+import { Header, Hero, About, Project, Contact } from "./component/index.js";
+import { ToastContainer } from "react-toastify";
 function App() {
   return (
     <>
@@ -24,6 +25,12 @@ function App() {
           <Hero />
           <About />
           <Project />
+          <Contact />
+          <ToastContainer
+            position="bottom-right"
+            autoClose={3000}
+            theme="dark"
+          />
         </main>
       </div>
     </>

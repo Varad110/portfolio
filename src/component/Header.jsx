@@ -21,8 +21,8 @@ export default function Header({ activePage }) {
                 />
               </a>
             ) : (
-              <Link to="/" className="w-16 lg:w-28">
-                <img src={logo} alt="logo" className="w-16 lg:w-28" />
+              <Link to="/" className="w-16 lg:w-20">
+                <img src={logo} alt="logo" className="w-16 lg:w-20" />
               </Link>
             )}
           </div>
@@ -39,7 +39,7 @@ export default function Header({ activePage }) {
               <a href="#Project" className="hover:text-[#004395] transition">
                 Project
               </a>
-              <a href="#" className="hover:text-[#004395] transition">
+              <a href="#Contact" className="hover:text-[#004395] transition">
                 Contact
               </a>
             </div>
@@ -98,7 +98,7 @@ export default function Header({ activePage }) {
             </a>
             <a
               onClick={() => setIsOpen(!isOpen)}
-              href="#"
+              href="#Contact"
               className="hover:text-[#004395] transition"
             >
               Contact

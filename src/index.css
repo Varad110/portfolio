@@ -30,6 +30,13 @@ body {
   font-weight: bold;
   font-style: normal;
 }
+.montserrat-normal {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 0;
+  font-style: normal;
+}
+
 @theme {
   --animate-bounceUp: bounceUp 2s ease-in-out infinite;
   @keyframes bounceUp {
