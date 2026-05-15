@@ -103,14 +103,8 @@ function Contact() {
 
                 <span>varadgujarathi120@gmail.com</span>
               </a>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              className="w-full "
-            >
-              <div className="inline-flex items-center mt-3 text-white gap-1 hover:text-green-300 w-fit transition duration-300 ease-in-out">
+
+              <div className="flex items-center mt-3 text-white gap-1 hover:text-green-300 w-fit transition duration-300 ease-in-out">
                 <span className="rounded border p-1 mr-2 md:mr-4">
                   <MapPin size={20} />
                 </span>
