@@ -2,6 +2,7 @@ import "./App.css";
 import SplashCursor from "./component/SplashCursor";
 import { Header, Hero, About, Project, Contact } from "./component/index.js";
 import { ToastContainer } from "react-toastify";
+import { Analytics } from "@vercel/analytics/react";
 function App() {
   return (
     <>
@@ -33,6 +34,7 @@ function App() {
           />
         </main>
       </div>
+      <Analytics />
     </>
   );
 }
