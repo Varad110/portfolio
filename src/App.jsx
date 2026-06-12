@@ -2,6 +2,7 @@ import "./App.css";
 import SplashCursor from "./component/SplashCursor";
 import { Header, Hero, About, Project, Contact } from "./component/index.js";
 import { ToastContainer } from "react-toastify";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 function App() {
   return (
     <>
@@ -32,6 +33,7 @@ function App() {
             theme="dark"
           />
         </main>
+        <SpeedInsights />
       </div>
     </>
   );
