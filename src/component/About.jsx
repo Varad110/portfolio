@@ -1,5 +1,5 @@
 import { Brain, Download, Wrench, BookUser } from "lucide-react";
-import varad from "../assets/varad.jpg";
+import varad from "../assets/varad.webp";
 import resume from "../assets/varad_resume (3).pdf";
 import ShapeGrid from "./ShapeGrid";
 import { motion } from "motion/react";

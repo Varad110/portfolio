@@ -1,8 +1,8 @@
 import { SquareArrowOutUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ProjectCard } from "./index.js";
-import campusHire from "../assets/campushire.png";
-import careercompass from "../assets/careercompass.png";
+import campusHire from "../assets/campushire.webp";
+import careercompass from "../assets/careercompass.webp";
 import { motion } from "motion/react";
 
 // import { useState } from "react";
