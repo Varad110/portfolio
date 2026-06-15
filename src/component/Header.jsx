@@ -7,7 +7,10 @@ export default function Header({ activePage }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" sticky  top-0 z-20 backdrop-blur-lg text-white ">
+    <nav
+      aria-label="Primary navigation"
+      className=" sticky  top-0 z-20 backdrop-blur-lg text-white "
+    >
       <div className="mx-auto  max-w-full px-4">
         <div className="flex h-13 sm:h-16 items-center justify-between">
           {/* Logo */}
@@ -16,7 +19,7 @@ export default function Header({ activePage }) {
               <a href="#Home">
                 <img
                   src={logo}
-                  alt="logo"
+                  alt="Varad Gujarathi Portfolio Logo"
                   className="w-16 lg:w-20 lg:h-16 object-contain "
                 />
               </a>
@@ -30,38 +33,88 @@ export default function Header({ activePage }) {
           {/* Desktop Menu */}
           {activePage === "Home" ? (
             <div className="hidden md:flex items-center space-x-8 mr-6 text-bold ">
-              <a href="#Home" className="hover:text-[#004395] transition">
+              <a
+                href="#Home"
+                className=" hover:text-[#004395]
+                              focus-visible:outline-2
+                              focus-visible:outline-offset-4
+                              focus-visible:outline-[#004395]
+                              transitiontransition"
+              >
                 Home
               </a>
-              <a href="#About" className="hover:text-[#004395] transition">
+              <a
+                href="#About"
+                className="hover:text-[#004395]  focus-visible:outline-2
+                            focus-visible:outline-offset-4
+                          focus-visible:outline-[#004395] transition"
+              >
                 About
               </a>
-              <a href="#Project" className="hover:text-[#004395] transition">
+              <a
+                href="#Project"
+                className="hover:text-[#004395]  focus-visible:outline-2
+                            focus-visible:outline-offset-4
+                            focus-visible:outline-[#004395] transition"
+              >
                 Project
               </a>
-              <a href="#Contact" className="hover:text-[#004395] transition">
+              <a
+                href="#Contact"
+                className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395] transition"
+              >
                 Contact
               </a>
             </div>
           ) : (
             <div className="hidden md:flex items-center space-x-8 mr-6">
-              <Link to="/#Home" className="hover:text-[#004395] transition">
+              <Link
+                to="/#Home"
+                className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395] transition"
+              >
                 Home
               </Link>
-              <Link to="/#About" className="hover:text-[#004395] transition">
+              <Link
+                to="/#About"
+                className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395] transition"
+              >
                 About
               </Link>
-              <Link to="/#Project" className="hover:text-[#004395] transition">
+              <Link
+                to="/#Project"
+                className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395]  transition"
+              >
                 Project
               </Link>
-              <Link to="/#Contact" className="hover:text-[#004395] transition">
+              <Link
+                to="/#Contact"
+                className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395] transition"
+              >
                 Contact
               </Link>
             </div>
           )}
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          <button
+            className="md:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label={
+              isOpen ? "Close navigation menu" : "Open navigation menu"
+            }
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
+          >
             {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
@@ -78,44 +131,72 @@ export default function Header({ activePage }) {
             <a
               onClick={() => setIsOpen(!isOpen)}
               href="#Home"
-              className="hover:text-[#004395] transition"
+              className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395] transition"
             >
               Home
             </a>
             <a
               onClick={() => setIsOpen(!isOpen)}
               href="#About"
-              className="hover:text-[#004395] transition"
+              className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395] transition"
             >
               About
             </a>
             <a
               onClick={() => setIsOpen(!isOpen)}
               href="#Project"
-              className="hover:text-[#004395] transition"
+              className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395]  transition"
             >
               Project
             </a>
             <a
               onClick={() => setIsOpen(!isOpen)}
               href="#Contact"
-              className="hover:text-[#004395] transition"
+              className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395] transition"
             >
               Contact
             </a>
           </div>
         ) : (
           <div className="flex flex-col items-end  space-y-4  backdrop-blur-lg px-4 py-4">
-            <Link to="/#Home" className="hover:text-[#004395] transition">
+            <Link
+              to="/#Home"
+              className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395]  transition"
+            >
               Home
             </Link>
-            <Link to="/#About" className="hover:text-[#004395] transition">
+            <Link
+              to="/#About"
+              className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395]  transition"
+            >
               About
             </Link>
-            <Link to="/#Project" className="hover:text-[#004395] transition">
+            <Link
+              to="/#Project"
+              className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395]  transition"
+            >
               Project
             </Link>
-            <Link to="/#Contact" className="hover:text-[#004395] transition">
+            <Link
+              to="/#Contact"
+              className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395]  transition"
+            >
               Contact
             </Link>
           </div>
