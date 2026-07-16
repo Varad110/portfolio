@@ -10,6 +10,7 @@ function Hero() {
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.3, ease: "easeInOut" }}
+        viewport={{ once: true }}
       >
         <div className="flex flex-col gap-6 ">
           <div className=" w-fit flex items-center justify-between px-4 py-1 gap-2 bg-gray-800 text-[clamp(0.5rem,0.7rem,1rem)] sm:text-sm text-white text-center rounded-full ">
@@ -57,6 +58,7 @@ function Hero() {
         initial={{ opacity: 0, x: 20 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.3, ease: "easeInOut" }}
+        viewport={{ once: true }}
       >
         {/* Side code snippet block */}
         <div className=" text-wrap flex flex-col bg-black/20 rounded-lg p-6 justify-center shadow-[0_0px_30px] shadow-gray-800/50">

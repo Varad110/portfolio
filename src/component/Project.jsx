@@ -22,6 +22,7 @@ function Project() {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeInOut" }}
+          viewport={{ once: true }}
         >
           <h1 className=" text-2xl sm:text-4xl jetbrains-mono-bold ">
             Engineering Digital <br /> Excellence
@@ -31,6 +32,7 @@ function Project() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeInOut" }}
+          viewport={{ once: true }}
         >
           <Link
             to="/projects"
@@ -45,6 +47,7 @@ function Project() {
         initial={{ opacity: 0, x: 200 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.5, ease: "easeInOut" }}
+        viewport={{ once: true }}
       >
         {/* Projects showcase */}
         <ProjectCard
@@ -67,6 +70,7 @@ function Project() {
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.5, ease: "easeInOut" }}
+        viewport={{ once: true }}
       >
         <ProjectCard
           image={careercompass}

@@ -78,9 +78,10 @@ function Contact() {
         <div className="w-full md:w-[50%]">
           <div className="flex flex-col px-3 py-4">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -50, hidden: true }}
+              whileInView={{ opacity: 1, x: 0, hidden: false }}
               transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
               className="w-full "
             >
               <h1 className="jetbrains-mono-bold text-3xl">
@@ -120,6 +121,7 @@ function Contact() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
           className="w-full px-5 py-6 flex flex-col items-center md:w-[50%] bg-gray-900/50 shadow-lg shadow-gray-700 rounded-lg border border-gray-700"
         >
           <form

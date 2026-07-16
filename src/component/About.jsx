@@ -15,6 +15,7 @@ function About() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeInOut" }}
+            viewport={{ once: true }}
           >
             <div className="mb-6 lg:mb-0 flex justify-center items-center">
               <img
@@ -30,6 +31,7 @@ function About() {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: "easeInOut" }}
+              viewport={{ once: true }}
             >
               <pre className=" text-4xl font-bold sm:text-6xl  text-wrap">
                 {`Building the Architectures 
@@ -42,6 +44,7 @@ of Tommorrow`}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeInOut" }}
+                viewport={{ once: true }}
               >
                 <p className=" text-lg text-gray-300 ">
                   I'm a passionate software developer with a love for crafting
@@ -57,6 +60,7 @@ of Tommorrow`}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeInOut" }}
+                viewport={{ once: true }}
               >
                 <div className="flex gap-4 mt-2">
                   <a download={"Varad_Gujarathi_Resume.pdf"} href={resume}>
@@ -82,6 +86,7 @@ of Tommorrow`}
             initial={{ opacity: 0, x: -20, y: 20 }}
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeInOut" }}
+            viewport={{ once: true }}
             className="col-span-3 sm:col-span-1 "
           >
             <div className="bg-gray-700/30 col-span-3 sm:col-span-1 text-white p-6 rounded-xl relative overflow-hidden">
@@ -105,6 +110,7 @@ of Tommorrow`}
             initial={{ opacity: 0, x: 20, y: 20 }}
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeInOut" }}
+            viewport={{ once: true }}
             className="w-full col-span-3 sm:col-span-2"
           >
             <div className="bg-gray-700/30 col-span-3 sm:col-span-2 text-white p-4 rounded-xl flex flex-col relative overflow-hidden">
