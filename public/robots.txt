@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://varadgujarathi.vercel.app/sitemap.xml

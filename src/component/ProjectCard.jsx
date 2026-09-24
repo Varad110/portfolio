@@ -1,5 +1,5 @@
 // import React from "react";
-import github from "../assets/github.png";
+import github from "../assets/github.webp";
 import { SquareArrowOutUpRight } from "lucide-react";
 function ProjectCard({
   image,
