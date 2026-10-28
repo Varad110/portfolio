@@ -3,7 +3,8 @@ import SplashCursor from "./component/SplashCursor";
 import { Header, Hero, About, Project, Contact } from "./component/index.js";
 import { ToastContainer } from "react-toastify";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import { Analytics } from "@vercel/analytics/react";
+import Certificate from "./component/Certificate.jsx";
+// import { Analytics } from "@vercel/analytics/react";
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
         <main className=" scroll-smooth relative top-0 z-10 mx-auto flex min-h-100 w-full max-w-8xl flex-col gap-24 py-12 px-5  text-white ">
           <Hero />
           <About />
+          <Certificate />
           <Project />
           <Contact />
           <ToastContainer
@@ -35,9 +37,9 @@ function App() {
           />
         </main>
         <SpeedInsights />
-        <Analytics />
+        {/* <Analytics /> */}
       </div>
-      <Analytics />
+      {/* <Analytics /> */}
     </>
   );
 }

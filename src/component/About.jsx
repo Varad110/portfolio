@@ -93,6 +93,9 @@ of Tommorrow`}
               <div className="absolute inset-0 pointer-events-none opacity-20 -z-10">
                 <ShapeGrid direction="diagonal" />
               </div>
+
+              {/* Philosopy div opening */}
+
               <div className="relative z-10">
                 <h1 className="text-3xl font-bold mt-3 flex items-center gap-4">
                   <Brain size={40} strokeWidth={2} color="#005AC2" />
@@ -106,6 +109,8 @@ of Tommorrow`}
               </div>
             </div>
           </motion.div>
+
+          {/* Skills div opening */}
           <motion.div
             initial={{ opacity: 0, x: 20, y: 20 }}
             whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -166,6 +171,7 @@ of Tommorrow`}
               </div>
             </div>
           </motion.div>
+          {/* Skills div close */}
         </div>
       </div>
     </section>

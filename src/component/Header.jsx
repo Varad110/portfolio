@@ -52,6 +52,14 @@ export default function Header({ activePage }) {
                 About
               </a>
               <a
+                href="#Certificate"
+                className="hover:text-[#004395]  focus-visible:outline-2
+                            focus-visible:outline-offset-4
+                          focus-visible:outline-[#004395] transition"
+              >
+                Certificates
+              </a>
+              <a
                 href="#Project"
                 className="hover:text-[#004395]  focus-visible:outline-2
                             focus-visible:outline-offset-4
@@ -69,6 +77,7 @@ export default function Header({ activePage }) {
               </a>
             </div>
           ) : (
+            // Else condition for other pages
             <div className="hidden md:flex items-center space-x-8 mr-6">
               <Link
                 to="/#Home"
@@ -85,6 +94,14 @@ export default function Header({ activePage }) {
   focus-visible:outline-[#004395] transition"
               >
                 About
+              </Link>
+              <Link
+                to="/#Certificate"
+                className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395] transition"
+              >
+                Certificates
               </Link>
               <Link
                 to="/#Project"
@@ -148,6 +165,15 @@ export default function Header({ activePage }) {
             </a>
             <a
               onClick={() => setIsOpen(!isOpen)}
+              href="#Certificate"
+              className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395] transition"
+            >
+              Certificates
+            </a>
+            <a
+              onClick={() => setIsOpen(!isOpen)}
               href="#Project"
               className="hover:text-[#004395]  focus-visible:outline-2
   focus-visible:outline-offset-4
@@ -182,6 +208,14 @@ export default function Header({ activePage }) {
   focus-visible:outline-[#004395]  transition"
             >
               About
+            </Link>
+            <Link
+              to="/#Certificate"
+              className="hover:text-[#004395]  focus-visible:outline-2
+  focus-visible:outline-offset-4
+  focus-visible:outline-[#004395]  transition"
+            >
+              Certificates
             </Link>
             <Link
               to="/#Project"
