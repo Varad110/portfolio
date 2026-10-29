@@ -9,7 +9,7 @@ import {
 import { ToastContainer } from "react-toastify";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { lazy, Suspense, useEffect, useState } from "react";
-// import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/react";
 
 const SplashCursor = lazy(() => import("./component/SplashCursor.jsx"));
 
@@ -75,9 +75,9 @@ function App() {
           />
         </main>
         <SpeedInsights />
-        {/* <Analytics /> */}
+        <Analytics />
       </div>
-      {/* <Analytics /> */}
+      <Analytics />
     </>
   );
 }
