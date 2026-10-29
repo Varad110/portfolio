@@ -1,10 +1,17 @@
 {
-  "name": "Varad Gujarathi Portfolio",
+  "@context": "https://agenticresourcediscovery.org/context/v1",
+  "identifier": "urn:air:varadgujarathi:portfolio",
+  "displayName": "Varad Gujarathi Portfolio",
+  "type": "text/html",
   "url": "https://varadgujarathi.vercel.app/",
   "description": "Portfolio of Varad Gujarathi, a full-stack developer.",
+  "representativeQueries": [
+    "What projects has Varad Gujarathi built?",
+    "How can I contact Varad Gujarathi?"
+  ],
   "links": {
-    "projects": "/projects",
-    "certificates": "/certificates",
-    "contact": "/#Contact"
+    "projects": "https://varadgujarathi.vercel.app/projects",
+    "certificates": "https://varadgujarathi.vercel.app/certificates",
+    "contact": "https://varadgujarathi.vercel.app/#Contact"
   }
 }
