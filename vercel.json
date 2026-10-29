@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/((?!ai-catalog\\.json$|llms\\.txt$).*)",
+      "source": "/((?!\\.well-known/|ai-catalog\\.json$|llms\\.txt$).*)",
       "destination": "/index.html"
     }
   ],
