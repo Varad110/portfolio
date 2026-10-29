@@ -31,7 +31,7 @@ function Hero() {
             <TypingAnimation
               showCursor={false}
               as="span"
-              className="text-[#004395]  text-shadow-zinc-200/30 text-shadow-[0_0px_20px] font-bold "
+              className="text-[#5b9cff] text-shadow-zinc-200/30 text-shadow-[0_0px_20px] font-bold"
             >
               high-
             </TypingAnimation>
@@ -40,7 +40,7 @@ function Hero() {
               showCursor={false}
               as="span"
               delay={700}
-              className="text-[#004395]  text-shadow-zinc-200/30 text-shadow-[0_0px_20px] font-bold"
+              className="text-[#5b9cff] text-shadow-zinc-200/30 text-shadow-[0_0px_20px] font-bold"
             >
               performance
             </TypingAnimation>

@@ -21,7 +21,11 @@ function About() {
               <img
                 src={varad}
                 alt="Varad"
-                className=" rounded-2xl min-w-30 min-h-90 max-h-90 max-w-80 lg:w-80 lg:h-90 object-fit shadow-[0_0px_30px] shadow-gray-800/70"
+                className=" rounded-2xl min-w-30 min-h-90 max-h-90 max-w-80 lg:w-80 lg:h-90 object-cover shadow-[0_0px_30px] shadow-gray-800/70"
+                width="640"
+                height="720"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </motion.div>

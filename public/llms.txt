@@ -1,0 +1,8 @@
+# Varad Gujarathi
+
+Personal portfolio of Varad Gujarathi, a full-stack developer.
+
+- [Home](https://varadgujarathi.vercel.app/)
+- [Projects](https://varadgujarathi.vercel.app/projects)
+- [Certificates](https://varadgujarathi.vercel.app/certificates)
+- [Contact](https://varadgujarathi.vercel.app/#Contact)

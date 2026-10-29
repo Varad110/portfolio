@@ -1,0 +1,10 @@
+{
+  "name": "Varad Gujarathi Portfolio",
+  "url": "https://varadgujarathi.vercel.app/",
+  "description": "Portfolio of Varad Gujarathi, a full-stack developer.",
+  "links": {
+    "projects": "/projects",
+    "certificates": "/certificates",
+    "contact": "/#Contact"
+  }
+}

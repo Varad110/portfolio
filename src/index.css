@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "@fontsource/jetbrains-mono/latin-400.css";
+@import "@fontsource/jetbrains-mono/latin-700.css";
 
 html,
 body,
@@ -36,6 +38,12 @@ body {
   font-optical-sizing: auto;
   font-weight: 0;
   font-style: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 @theme {

@@ -79,14 +79,6 @@
     <!-- manifest -->
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- jetbrains mono google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-      rel="stylesheet"
-    />
-
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -105,10 +97,6 @@
     </script>
 
     <!-- Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-SJ8E0PR7WS"
-    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -117,6 +105,13 @@
       gtag("js", new Date());
 
       gtag("config", "G-SJ8E0PR7WS");
+
+      window.addEventListener("load", function () {
+        var script = document.createElement("script");
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-SJ8E0PR7WS";
+        document.head.appendChild(script);
+      });
     </script>
 
     <title>

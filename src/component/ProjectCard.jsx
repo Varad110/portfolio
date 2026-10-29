@@ -1,5 +1,5 @@
 // import React from "react";
-import github from "../assets/github.webp";
+import github from "../assets/github.png";
 import { SquareArrowOutUpRight } from "lucide-react";
 function ProjectCard({
   image,
@@ -18,7 +18,15 @@ function ProjectCard({
       >
         <div className=" md:px-3 md:py-3 w-full md:w-[50%] h-full flex justify-center items-center animate-bounceUp rounded-lg overflow-hidden">
           <div className="w-full  md:w-150 self-center h-full flex justify-center items-center rounded-lg overflow-hidden">
-            <img src={image} className="w-full h-full" alt="Campus Hire" />
+            <img
+              src={image}
+              className="w-full h-full"
+              width="1100"
+              height="590"
+              loading="lazy"
+              decoding="async"
+              alt={`${title} project preview`}
+            />
           </div>
         </div>
         <div className="w-full p-3 md:w-[50%] h-full flex flex-col justify-start self-start items-start gap-4 mt-4 sm:mt-0">
@@ -52,6 +60,9 @@ function ProjectCard({
                 <img
                   src={github}
                   className="w-5 h-5 mr-1 inline"
+                  width="20"
+                  height="20"
+                  decoding="async"
                   alt="Github"
                 />
                 Github

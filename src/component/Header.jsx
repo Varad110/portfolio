@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/logo.webp";
+import logo from "../assets/logo.png";
 
 export default function Header({ activePage }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,12 +20,22 @@ export default function Header({ activePage }) {
                 <img
                   src={logo}
                   alt="Varad Gujarathi Portfolio Logo"
-                  className="w-16 lg:w-20 lg:h-16 object-contain "
+                  className="w-16 lg:w-20 h-auto object-contain "
+                  width="230"
+                  height="129"
+                  decoding="async"
                 />
               </a>
             ) : (
               <Link to="/" className="w-16 lg:w-20">
-                <img src={logo} alt="logo" className="w-16 lg:w-20" />
+                <img
+                  src={logo}
+                  alt="Varad Gujarathi Portfolio Logo"
+                  className="w-16 lg:w-20 h-auto"
+                  width="230"
+                  height="129"
+                  decoding="async"
+                />
               </Link>
             )}
           </div>

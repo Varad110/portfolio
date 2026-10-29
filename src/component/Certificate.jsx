@@ -2,7 +2,6 @@ import { SquareArrowOutUpRight } from "lucide-react";
 import CertificatesCollection from "./CertificatesCollection";
 import {javascriptICI,javascriptICP,softwareEngineerCI,softwareEngineerCP,commanwealhbankCI,commanwealhbankCP} from "../assets/index"
 import { Link } from "react-router-dom";
-import campushire from "../assets/campushire.webp";
 import { motion } from "motion/react";
 
 function Certificate() {
@@ -44,7 +43,7 @@ function Certificate() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 md:gap-5 ">
         {/* Card 1 */}
-      
+
         <motion.div
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -72,6 +71,7 @@ function Certificate() {
             issuer="Forage"
             date={new Date("2026/10")}
             certificateLink={commanwealhbankCP}
+            imageHeight={778}
           />
         </motion.div>
 

@@ -6,6 +6,8 @@ function CertificatesCollection({
   issuer = "Company name",
   date = new Date(""),
   certificateLink,
+  imageWidth = 1100,
+  imageHeight = 838,
 }) {
   return (
     <div className="flex justify-center items-center mt-5 md:mt-0">
@@ -17,6 +19,10 @@ function CertificatesCollection({
             <img
               src={image}
               className="w-auto h-auto"
+              width={imageWidth}
+              height={imageHeight}
+              loading="lazy"
+              decoding="async"
               alt={title + " Certificate"}
             />
           </div>
@@ -35,7 +41,12 @@ function CertificatesCollection({
             })}
           </p>
 
-          <a href={certificateLink} target="_blank" rel="noopener noreferrer">
+          <a
+            href={certificateLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`View ${title} certificate (PDF)`}
+          >
             <button
               type="button"
               className="text-sm flex items-center gap-2 cursor-pointer bg-blue-500 p-2 rounded-2xl shadow-lg hover:bg-blue-600 hover:shadow-blue-500/50  hover:-translate-y-1 transition-all "
